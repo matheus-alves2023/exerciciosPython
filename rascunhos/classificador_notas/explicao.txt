@@ -1,0 +1,3 @@
+Gerar lista com notas aleatórios utilizando uma funcao.
+Em seguida, fazer uma listcompreheension que classifique notas (que virao justamente dessa aleatoriedade da lista criada por uma funcao) de alunos como:
+'''Acompanhamento, se nota do aluno for menor ou igual a 2. Reprovado, se a nota do aluno for menor do que 4 mas nao menor ou igual a 2. Recuperacao, se a nota do aluno estiver entre 4 e 5.9 Aprovado, se a nota nota do aluno estiver entre 6 e 8.9 Aprovado com premio, se a nota do aluno for >=9 ''''
