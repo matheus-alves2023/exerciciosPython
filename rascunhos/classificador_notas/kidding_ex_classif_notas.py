@@ -18,7 +18,7 @@ while True:
     try:
     
         amostragem = int(input("Quantas notas você que nesta amostragem? "))
-        intervalo_notas = input("Você quer qual intervalo de notas? ").split()
+        intervalo_notas = input("Você quer qual intervalo de notas? Separo o intervalo com espaço. ").split()
         if len(intervalo_notas) == 2:
             lista_intervalo_notas = [float(v)for v in intervalo_notas]
             print(classificador_notas(amostragem, *lista_intervalo_notas))
