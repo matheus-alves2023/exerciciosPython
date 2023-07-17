@@ -7,6 +7,9 @@ soma = 0
 for i, v in enumerate(probabilidade):
     soma += probabilidade[i] * classificacao[i]
     
+    
         
 print(f"{soma:.2f}")
-    
+
+
+#soma += probabilidade[i] * classificacao[i]
