@@ -8,7 +8,7 @@ print(listaAcomB) #note que aqui, eu criei uma variável que recebeu valores de 
 
 #utilizando extend.
 
-lista_centenas_milhares = [500,600,700] #note que inicialmente, nossa lista foi declarada apenas com valores de centenas. [500,600,700] Mas e se eu quiser adionar valores de milhares nela sem ter que criar outra variável? Utilizo extend.
+lista_centenas_milhares = [500,600,700] 
 print(lista_centenas_milhares)
 lista_centenas_milhares.extend([5000,6000,7000])
 
