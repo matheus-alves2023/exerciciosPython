@@ -1,0 +1,11 @@
+"Faça uma lista de compras utilizando list.
+
+
+O usuário deve ser capaz de:
+1 - inserir
+2 - apagar
+3 - listar valores.
+
+
+obs: Não permitir que o usuário quebre o programa com índices inexistentes. 
+"
