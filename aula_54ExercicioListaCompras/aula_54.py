@@ -48,9 +48,12 @@ while True:
             os.system('cls')
             print(f'O item "{item_sera_del}" foi deletado com sucesso!')
     
-        except:
-            os.system('cls')
-            print("Índice inexistente. Tente novamente.")
+        
+        except IndexError:
+            os.system("cls")
+            print("Índice inexistente. ")
+        except Exception:
+            os.system("Erro desconhecido. Por favor, contate o suporte. ")
             
     else:
         os.system("cls")

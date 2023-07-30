@@ -1,0 +1,9 @@
+\d: Representa qualquer dígito numérico (0 a 9).
+\D: Representa qualquer caractere que não seja um dígito numérico. É o oposto de \d.
+\w: Representa qualquer caractere alfanumérico (letras, dígitos e sublinhados). Equivale a [a-zA-Z0-9_].
+\W: Representa qualquer caractere que não seja alfanumérico. É o oposto de \w.
+\s: Representa qualquer espaço em branco (espaço, tabulação, quebra de linha etc.).
+\S: Representa qualquer caractere que não seja um espaço em branco. É o oposto de \s.
+.: Representa qualquer caractere, exceto uma quebra de linha.
+^: Representa o início de uma linha ou uma sequência.
+$: Representa o final de uma linha ou uma sequência.
