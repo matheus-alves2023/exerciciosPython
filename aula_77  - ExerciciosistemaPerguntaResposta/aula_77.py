@@ -28,10 +28,8 @@ def questoes_funcao(dicionario):
       print(v['Pergunta'])
 
       for i, opcao in enumerate(v['Opções']):
-         
          print([i],opcao)
          
-
       option = ' '
       while option not in "0123":
         option = input("Digite a opção correta: ")
@@ -53,3 +51,6 @@ def questoes_funcao(dicionario):
     
 
 print(questoes_funcao(perguntas))
+
+
+
