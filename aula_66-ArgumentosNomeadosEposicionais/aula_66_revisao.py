@@ -1,6 +1,6 @@
 def soma(x,y):
 
-    return x + y
+    print(f"{x=} + {y=}, = {x +y}")
 
 
-print(soma(2,2))
+print(soma(4,y=2))
