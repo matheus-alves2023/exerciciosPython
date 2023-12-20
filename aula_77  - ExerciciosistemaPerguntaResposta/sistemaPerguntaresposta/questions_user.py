@@ -1,7 +1,4 @@
-from os import system
-from time import sleep
-import string
-
+import libraries
 perguntas = [
     {
         'Pergunta': 'Quanto é 2+2?',
@@ -34,7 +31,7 @@ def front_quiz(SetQuestions):
         options = v.get('Opções')
         alternative_answer = v.get('Resposta_letra')
         exact_answer = v.get('Resposta_exata')
-        letters = string.ascii_lowercase
+        letters = libraries.string.ascii_lowercase
         for letter, o in zip(options,letters):
             print(f'{o} - {letter} ')
         
@@ -45,14 +42,14 @@ def front_quiz(SetQuestions):
         
         if user_option_input in  alternative_answer or user_option_input in  exact_answer:
             hits += 1
-            system('clear')
+            libraries.system('clear')
             print('Certa Resposta!')
-            sleep(1)
+            libraries.sleep(1)
         else:
             misses += 1
-            system('clear')
+            libraries.system('clear')
             print('Resposta errada!')
-            sleep(1)
+            libraries.sleep(1)
         data_question.update(
             {
                f'question_log_{k}':  question,
@@ -69,8 +66,8 @@ def front_quiz(SetQuestions):
         'misses': misses,
     })
     print(f'Voce acertou {hits} de {hits + misses} perguntas.')
-    sleep(2)
-    system('clear')
+    libraries.sleep(2)
+    libraries.system('clear')
     return data_question
 
 print(front_quiz(perguntas))
