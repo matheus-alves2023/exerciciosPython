@@ -1,0 +1,49 @@
+dict_question_db = {}
+    alternatives_list = []
+    c = 1
+    question_register = input("Cadastre sua pergunta: ")
+    
+    while True: 
+        alternatives_register = input(f'Por favor, cadastre a alternativa de numero {c} (Elas aparecerao para o aluno como letra a, b,c,etc.):')
+        alternatives_list.append(alternatives_register)
+        
+        break_alternative = input('Continuar cadastrando? [S/N]:')
+        c += 1
+        if break_alternative  in 'Nn' and len(alternatives_list) >=2:
+            break
+        elif break_alternative in 'Nn' and len(alternatives_list) <2:
+            print('Cadastre ao menos mais uma alternativa!')
+            
+        dict_question_db.update({
+        'Pergunta':f'{question_register}'
+    })
+    
+    def cadastropergunta():
+    c = 1
+    pergunta_unica = {}
+    lista_alternativas = []
+    letras = libraries.string.ascii_lowercase
+    pergunta_cadastrada_input = input('Digite sua pergunta: ')
+    while True:
+        alternativas_cadastro = input(f'Digite a {c} alternativa: ')
+        for alternativa, letra in zip(lista_alternativas,letras):
+            print(f'{letra} - {alternativa} ')
+        c += 1
+        
+       
+        cadastrarmais = input('Cadastrar mais alternativas? [S/N]:')
+        if cadastrarmais in 'Nn' and len(lista_alternativas) >= 2:
+            print('Voce cadastrou as seguintes alternativas:')
+            
+            resposta_letra = input('Qual a letra da alternativa que corresponde sua resposta: ')   
+            break
+        elif cadastrarmais in 'Nn' and len(lista_alternativas) < 2:
+            print('Por favor, cadastre ao menos mais uma alternativa.')
+    return lista_alternativas
+    # def juntarperguntas():
+    #     dicionario = {
+    #         'Pergunta1':f'{pergunta1}',
+    #         'Pergunta2':f'{pergunta2}'
+    #     }
+    #     return dicionario
+    # return juntarperguntas()

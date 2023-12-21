@@ -22,30 +22,23 @@ perguntas = [
 
 
 def cadastropergunta():
-    c = 1
+    c = 0
     pergunta_unica = {}
     lista_alternativas = []
+    letras = libraries.string.ascii_lowercase
     pergunta_cadastrada_input = input('Digite sua pergunta: ')
     while True:
-        alternativas_cadastro = input(f'Digite a {c} alternativa: ')
-        lista_alternativas.append(alternativas_cadastro)
+        alternativa_cadastro = input(f'Digite a alternativa de letra {letras[c]} :')
+        lista_alternativas.append(f'{letras[c]} - {alternativa_cadastro}')
+        print(f'{alternativa_cadastro} cadastrado.')
+        print(f'{lista_alternativas}')
         c += 1
-        letras = libraries.string.ascii_lowercase
-        cadastrarmais = input('Cadastrar mais alternativas? [S/N]:')
-        if cadastrarmais in 'Nn' and len(lista_alternativas) >= 2:
-            print('Voce cadastrou as seguintes alternativas:')
-            for letra, o in zip(lista_alternativas,letras):
-                print(f'{o} - {letra} ')
-            resposta_letra = input('Qual a letra da alternativa que corresponde sua resposta: ')   
-            break
-        elif cadastrarmais in 'Nn' and len(lista_alternativas) < 2:
-            print('Por favor, cadastre ao menos mais uma alternativa.')
-    return lista_alternativas
-    # def juntarperguntas():
-    #     dicionario = {
-    #         'Pergunta1':f'{pergunta1}',
-    #         'Pergunta2':f'{pergunta2}'
-    #     }
-    #     return dicionario
-    # return juntarperguntas()
+        
+        # for alternativas, letra in zip(lista_alternativas,letras):
+        #     lista_alternativas.append(f'{letra} - {alternativas}')
+        #     print(f'{letra} - {alternativas} ')
+        #     print(lista_alternativas)
+    
+
+
 print(cadastropergunta())
