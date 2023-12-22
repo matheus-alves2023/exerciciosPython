@@ -20,7 +20,7 @@ perguntas = [
     },
 ]
 
-
+e
 def cadastropergunta():
     c = 0
     pergunta_unica = {}
