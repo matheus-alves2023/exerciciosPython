@@ -12,15 +12,14 @@ def front_quiz(SetQuestions):
         alternative_answer = v.get('Resposta_letra')
         exact_answer = v.get('Resposta_exata')
         letters = libraries.string.ascii_lowercase
-        for letter, o in zip(options,letters):
-            print(f'{o} - {letter} ')
+        print(options)
         
                 
         # print(options)
         user_option_input = input('Digite a opcao correta:').upper()
         
         
-        if user_option_input in  alternative_answer or user_option_input in  exact_answer:
+        if user_option_input in  alternative_answer:
             hits += 1
             libraries.system('clear')
             print('Certa Resposta!')
