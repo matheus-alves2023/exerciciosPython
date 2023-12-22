@@ -1,24 +1,4 @@
 import libraries
-perguntas = [
-    {
-        'Pergunta': 'Quanto é 2+2?',
-        'Opções': ['1', '3', '4', '5'],
-        'Resposta_letra': 'cC',
-        'Resposta_exata':'4'
-    },
-    {
-        'Pergunta': 'Quanto é 5*5?',
-        'Opções': ['25', '55', '10', '51'],
-        'Resposta_letra': 'aA',
-        'Resposta_exata':'25',
-    },
-    {
-        'Pergunta': 'Quanto é 10/2?',
-        'Opções': ['4', '5', '2', '1'],
-        'Resposta_letra': 'bB',
-        'Resposta_exata':'5'
-    },
-]
 
 
 def front_quiz(SetQuestions):
@@ -37,7 +17,7 @@ def front_quiz(SetQuestions):
         
                 
         # print(options)
-        user_option_input = input('Digite a opcao correta:')
+        user_option_input = input('Digite a opcao correta:').upper()
         
         
         if user_option_input in  alternative_answer or user_option_input in  exact_answer:
@@ -70,4 +50,3 @@ def front_quiz(SetQuestions):
     libraries.system('clear')
     return data_question
 
-print(front_quiz(perguntas))
