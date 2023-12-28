@@ -44,4 +44,3 @@ def primeiro_duplicado(lista_lista_inteiros):
 
       
 print(primeiro_duplicado(lista_de_listas_de_inteiros))
-

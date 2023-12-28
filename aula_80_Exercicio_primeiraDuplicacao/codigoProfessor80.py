@@ -17,6 +17,7 @@ def encontra_primeiro_duplicado(lista_de_inteiros):
 
 
 lista_de_listas_de_inteiros = [
+[1, 4, 9, 8, 9, 4, 8],
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 [9, 1, 8, 9, 9, 7, 2, 1, 6, 8],
 [1, 3, 2, 2, 8, 6, 5, 9, 6, 7],
