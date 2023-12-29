@@ -1,9 +1,11 @@
-def nomes (*valores):
-    nomeSelecionado = []
-    for nome in valores:
-        if nome[0] in 'Rr':
-            nomeSelecionado.append(nome)
-    return nomeSelecionado
+def fatorCasa(multiplicador):
 
+    def fatorUsuario(numero):
 
-print(nomes('Renato','Claudia','ROdrigo','rOnaldinho'))
+        return multiplicador * numero
+    return fatorUsuario
+
+duplica = fatorCasa(2)
+usuario = 2
+
+print(duplica(2))
