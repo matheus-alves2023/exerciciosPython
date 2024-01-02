@@ -14,9 +14,10 @@ produtos = [
 # ]
 novos_produtos = [
 
-    {**produto, 'preco': produto['preco'] * 1.05}
+  {**produto,'preco': produto['preco'] * 1.05}
     if produto['preco'] > 20 else {**produto}
-    for produto in produtos
+  for produto in produtos
+  
 
 ]
 
