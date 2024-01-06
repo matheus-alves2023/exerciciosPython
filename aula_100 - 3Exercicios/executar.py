@@ -8,9 +8,9 @@ produtos = [
 ]
 
 from lidarCompras_package import altera_preco
-from lidarCompras_package import organizar_produtos, ordena_nome_asce,ordena_nome_desc
+from lidarCompras_package import organizar_produtos, ordena_preco_asce,ordena_nome_desc
 
-for v in ordena_nome_asce(altera_preco(produtos,1.10)):
+for v in ordena_preco_asce(altera_preco(produtos,1.10)):
     print(v)
 print('-='*30)
 for v in ordena_nome_desc(altera_preco(produtos,1.10)):
