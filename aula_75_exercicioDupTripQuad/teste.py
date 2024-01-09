@@ -1,11 +1,15 @@
-def fatorCasa(multiplicador):
 
-    def fatorUsuario(numero):
 
-        return multiplicador * numero
-    return fatorUsuario
+def fator_constante(x):
 
-duplica = fatorCasa(2)
-usuario = 2
+    def fator_variavel(y):
 
-print(duplica(2))
+        return x * y
+    
+
+    return fator_variavel
+
+
+duplica = fator_constante(2)
+
+print(duplica(3))
